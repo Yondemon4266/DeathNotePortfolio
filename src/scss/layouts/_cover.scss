@@ -1,0 +1,60 @@
+.death-note {
+    width: 80vw;
+    height: 75vh;
+    @extend %flex-center;
+    margin: 20px;
+    @media screen and (max-width:960px) {
+      height: 60vh;
+    }
+    @media screen and (max-width:780px) {
+      width: 85vw;
+
+    }
+    @media screen and (max-width:680px) {
+      width: 85vw;
+      height: 50vh;
+    }
+    @media screen and (max-width:540px) {
+      width: 90vw;
+      height: 50vh;
+    }
+    @media screen and (max-width:450px) {
+      margin: 10px;
+      width: 90vw;
+      height: 45vh;
+    }
+  }
+  .death-note-cover {
+    display: flex;
+    justify-content: center;
+    width: 35vw;
+    height: 75vh;
+    border: 1px solid rgba(255, 255, 255, 0.638);
+    box-shadow: 1px 1px 16px $white;
+    text-align: center;
+    @media screen and (max-width:1160px) {
+      width: 50vw;
+    }
+    @media screen and (max-width: 880px) {
+      width: 65vw;
+    }
+    @media screen and (max-width:680px) {
+      width: 85vw;
+      height: 60vh;
+    }
+    @media screen and (max-width:540px) {
+      width: 90vw;
+      height: 50vh;
+    }
+    @media screen and (max-width:450px) {
+      width: 90vw;
+      height: 45vh;
+    }
+  }
+
+ .death-note-cover h2 {
+    color: $white;
+    margin: 10% 0 0 0;
+    height: fit-content;
+    width: fit-content;
+  }

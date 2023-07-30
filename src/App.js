@@ -13,26 +13,23 @@ function App() {
   const navigatePages = {
     currentPage,
     nextPages: () => {
-      const bookElement = document.querySelector('.death-note');
+      const bookElement = document.querySelector(".death-note");
       if (currentPage + 1 < totalPages - 1) {
         setCurrentPage(currentPage + 1);
-        bookElement.style.boxShadow = '1px 1px 16px white';
+        bookElement.style.boxShadow = "1px 1px 16px white";
       }
-      
     },
     previousPages: () => {
-      const bookElement = document.querySelector('.death-note');
+      const bookElement = document.querySelector(".death-note");
       if (currentPage > 0) {
         setCurrentPage(currentPage - 1);
-        bookElement.style.boxShadow = '1px 1px 16px white';
-      if (currentPage - 1  === 0) {
+        bookElement.style.boxShadow = "1px 1px 16px white";
+        if (currentPage - 1 === 0) {
           bookElement.style.boxShadow = null;
-        } 
+        }
       }
-        
     },
   };
-  console.log(currentPage);
 
   return (
     <div className="App">
@@ -48,11 +45,24 @@ function App() {
               <h2>DEATH NOTE</h2>{" "}
             </div>
           )}
-          {currentPage === 1 && (<><CoverSide navigatePages={navigatePages}/>
-           <FirstPage navigatePages={navigatePages}/></>)}
-          {currentPage === 2 && (<><SecondPage navigatePages={navigatePages}/><ThirdPage navigatePages={navigatePages}/></>)}
-          {currentPage === 3 && (<><ForthPage navigatePages={navigatePages}/><FifthPage navigatePages={navigatePages}/></>)}
-
+          {currentPage === 1 && (
+            <>
+              <CoverSide navigatePages={navigatePages} />
+              <FirstPage navigatePages={navigatePages} />
+            </>
+          )}
+          {currentPage === 2 && (
+            <>
+              <SecondPage navigatePages={navigatePages} />
+              <ThirdPage navigatePages={navigatePages} />
+            </>
+          )}
+          {currentPage === 3 && (
+            <>
+              <ForthPage navigatePages={navigatePages} />
+              <FifthPage navigatePages={navigatePages} />
+            </>
+          )}
         </div>
       </main>
     </div>
@@ -60,5 +70,3 @@ function App() {
 }
 
 export default App;
-
-

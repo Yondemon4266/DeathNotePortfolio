@@ -1,0 +1,67 @@
+// Couleurs principales
+$noir: black;
+$gris:rgba(255, 255, 255, 0.283);
+$white: white;
+$page: rgb(255, 237, 137);
+$ligne-color: rgb(23, 23, 23);
+// Utilitaires position / dimensions
+
+$radius-btn : 2px;
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%border-line {
+  border-bottom: 1.5px solid $ligne-color;
+}
+
+@mixin absolute-el ($top, $right, $bottom, $left, $x, $y) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    transform: translate($x,$y);
+}
+
+@mixin pseudo-el ($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+@font-face {
+    font-family: 'Death Note';
+    src: url('../fonts/Death_Note_Font.ttf');
+  }
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter.ttf');
+}
+@font-face {
+  font-family: 'Merri';
+  src: url('../fonts/Merriweather-Light.ttf');
+}
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    width: 100vw;
+    height: 100vh;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 0;
+    font-family: 'Death Note', sans-serif;
+    background-color: $noir;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

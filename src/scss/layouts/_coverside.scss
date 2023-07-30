@@ -1,0 +1,166 @@
+.cover-side {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 40vw;
+    height: 75vh;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 50px 50px;
+    @media screen and (max-width:960px) {
+      height: 60vh;
+      padding: 30px 30px;
+    }
+    @media screen and (max-width:780px) {
+      width: 42.5vw;
+      padding: 20px 20px;
+    }
+    @media screen and (max-width:680px) {
+      height: 50vh;
+      padding: 20px 20px;
+    }
+    @media screen and (max-width:540px) {
+      width: 45vw;
+      height: 50vh;
+    }
+    @media screen and (max-width:450px) {
+      width: 45vw;
+      height: 45vh;
+      padding: 12px;
+      
+    }
+  }
+  .back1 {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+    transition: 1s ease;
+    z-index: 1000;
+    @media screen and (max-width:960px) {
+      left: 5px;
+      top: 5px;
+      width: 28px;
+      height: 28px;
+    }
+    @media screen and (max-width:980px) {
+      left: 25px;
+      top: 25px;
+      width: 28px;
+      height: 28px;
+    }
+    @media screen and (max-width:450px) {
+      left: 20px;
+      top: 20px;
+      width: 24px;
+      height: 24px;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .content-cover-side {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.187);
+    border-radius: $radius-btn;
+    text-align: center;
+    padding: 5px;
+  }
+  .logo {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    transform: translateY(-75%);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s ease;
+    @media screen and (max-width:450px) {
+      width: 26px;
+      height: 26px;
+    }
+    @media screen and (max-width:680px) {
+      width: 40px;
+      height: 40px;
+    }
+    &:hover {
+      transform: translateY(-75%) scale(1.1);
+    }
+  }
+  .light {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    right: 5px;
+    bottom: 5px;
+    cursor: pointer;
+    transition: 1s ease;
+    @media screen and (max-width:450px) {
+      right: initial;
+      bottom: 50px;
+      width: 40px;
+      height: 40px;
+    }
+    @media screen and (max-width:680px) {
+      width: 60px;
+      height: 60px;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .cover-side h3 {
+    margin: 40px 0 0 0;
+    width: fit-content;
+    height: fit-content;
+    letter-spacing: 1px;
+    @media screen and (max-width:450px) {
+      font-size: 0.75rem;
+    }
+    @media screen and (max-width:680px) {
+      font-size: 0.83rem;
+    }
+  }
+  .cover-side h6 {
+    margin: 10px 0 10px 0;
+    @media screen and (max-width:450px) {
+      font-size: 0.5rem;
+    }
+    @media screen and (max-width:680px) {
+      font-size: 0.6rem;
+    }
+  }
+  .cover-side p {
+    position: relative;
+    font-size: 0.67rem;
+    line-height: 2;
+    margin: 10px 0;
+    @media screen and (max-width:450px) {
+      font-size: 0.43rem;
+    }
+    @media screen and (max-width:680px) {
+      font-size: 0.52rem;
+    }
+  }
+  .back2 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    transition: 1s ease;
+    transform: translate(-50%, 50%);
+    @media screen and (max-width:900px) {
+      top: 65%;
+    }
+    &:hover {
+      transform: translate(-50%,50%) scale(1.1);
+    }
+  }
