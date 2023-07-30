@@ -30,6 +30,7 @@ function App() {
       }
     },
   };
+  console.log(process.env.CI);
 
   return (
     <div className="App">

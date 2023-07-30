@@ -1,6 +1,5 @@
 import React from "react";
 import next from "./img/next.png";
-import mangAnime from "./img/screensite.png";
 
 export default function FirstPage({ navigatePages }) {
   return (

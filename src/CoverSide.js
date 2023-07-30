@@ -2,7 +2,6 @@ import React from 'react'
 import back from "./img/back.png"
 import logo from "./img/logo.png"
 import light from "./img/light.png"
-import next from "./img/next.png"
 
 export default function CoverSide({navigatePages}) {
 
